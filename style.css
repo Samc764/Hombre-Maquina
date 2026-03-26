@@ -1,0 +1,93 @@
+
+/* ===== ESTILO GENERAL ===== */
+:root {
+  --primario: #2563eb;
+  --primario-hover: #1d4ed8;
+  --fondo: #f8fafc;
+  --blanco: #ffffff;
+  --texto: #1e293b;
+  --borde: #e2e8f0;
+  --sombra: 0 4px 12px rgba(0,0,0,0.08);
+  --sombra-hover: 0 6px 18px rgba(0,0,0,0.12);
+  --radio: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--fondo);
+  color: var(--texto);
+  padding: 20px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: var(--blanco);
+  padding: 15px 25px;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--texto);
+  margin-left: 15px;
+}
+
+.navbar a:hover {
+  color: var(--primario);
+}
+
+/* ===== CONTENEDOR ===== */
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* ===== TARJETAS ===== */
+.card {
+  background: var(--blanco);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--sombra-hover);
+}
+
+/* ===== BOTONES ===== */
+button {
+  background: var(--primario);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: var(--radio);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--primario-hover);
+  transform: translateY(-2px);
+}
+
+/* ===== TITULOS ===== */
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
